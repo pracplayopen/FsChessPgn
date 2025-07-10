@@ -22,13 +22,13 @@ type RealFileTests () =
 
     [<TestMethod>]
     member this.Lon09R5() =
-        let db = Games.ReadFromFile(TestSet+"Lon09R5.pgn")
+        let db = Games.ReadFromFile(TestSet+"lon09r5.pgn")
 
         Assert.AreEqual(db|>Seq.length,4)
 
     [<TestMethod>]
     member this.Tilb98R2() =
-        let db = Games.ReadFromFile(TestSet+"Tilb98R2.pgn")
+        let db = Games.ReadFromFile(TestSet+"tilb98r2.pgn")
 
         Assert.AreEqual(db|>Seq.length,6)
 
